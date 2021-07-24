@@ -24,7 +24,7 @@ repositories {
 }
 
 //Spring Boot Overriding
-ext['hibernate.version'] = '5.2.11.Final'
+//ext['hibernate.version'] = '5.2.11.Final'
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
