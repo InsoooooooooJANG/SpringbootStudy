@@ -40,9 +40,9 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
 
     bucket: insoo-springboot-build
-    key: insoo-springboot-webservice.zip
+    key: SpringbootStudy.zip
     bundle_type: zip
-    application:  freelec-springboot2-webservice
+    application:  insoo-springboot-webservice
     deployment_group: insoo-springboot-webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
