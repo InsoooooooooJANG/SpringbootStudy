@@ -41,9 +41,8 @@ deploy:
 
     bucket: insoo-springboot-build
     key: insoo-springboot-webservice.zip
-
     bundle_type: zip
-    application:  insoo-springboot-webservice
+    application:  freelec-springboot2-webservice
     deployment_group: insoo-springboot-webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
