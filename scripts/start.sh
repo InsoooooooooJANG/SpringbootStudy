@@ -28,4 +28,7 @@ IDLE_PROFILE=$(find_idle_profile)
 echo "> $JAR_NAME 를 profile=$IDLE_PROFILE 로 실행합니다."
 nohup java -jar -Dspring.config.location=classpath:/application.properties,classpath:/application-$IDLE_PROFILE.properties,/home/ec2-user/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties -Dspring.profiles.active=$IDLE_PROFILE $JAR_NAME > $REPOSITORY/nohup.out 2>&1
 
+echo "> 실행 확인"
+CURRENT_PID=$(pgrep -fl java | awk '{print $1}')
 
+echo "'현재 구동중인 어플리케이션 pid: $CURRENT_PID"
